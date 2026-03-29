@@ -26,12 +26,15 @@ Secure Architecture: Utilizes .env configuration to protect sensitive API creden
 
 ## Technical Tech Stack
 
-Layer,Technology
-Frontend,"HTML5, CSS3 (Futuristic UI), JavaScript (ES6+)"
-Backend,"Python 3.x, Flask"
-AI Engine,Google Generative AI (Gemini API)
-Communication,RESTful API / JSON
-Environment,Python-Dotenv
+## 🛠️ Technical Stack
+
+| Component | Technology |
+| :--- | :--- |
+| **Frontend** | HTML5, CSS3 (Neon-Glassmorphism), JavaScript (ES6+) |
+| **Backend** | Python 3.x, Flask |
+| **AI Engine** | Google Generative AI (Gemini API) |
+| **Security** | Python-Dotenv |
+| **Data Flow** | REST API (JSON) |
 
 ---
 
