@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartREFI AI - Fridge Control</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+<div class="fridge-frame">
+
+  <div class="top-bar">
+    <div class="logo-area">
+      <div class="logo-icon">❄️</div>
+      <div>
+        <div class="logo-name">SMARTREFI</div>
+        <div class="logo-sub">FRESHNESS CONTROL SYSTEM v2.4</div>
+      </div>
+    </div>
+    <div class="clock-area">
+      <div class="clock-time" id="clock">00:00</div>
+      <div class="clock-date" id="clock-date">--</div>
+    </div>
+  </div>
+
+  <div class="temp-strip">
+    <div class="temp-zone">
+      <div class="temp-val fridge-temp">4°C</div>
+      <div class="temp-lbl">Fridge</div>
+    </div>
+    <div class="temp-zone">
+      <div class="temp-val freezer-temp">-18°C</div>
+      <div class="temp-lbl">Freezer</div>
+    </div>
+    <div class="temp-zone">
+      <div class="temp-val fridge-humidity">68%</div>
+      <div class="temp-lbl">Humidity</div>
+    </div>
+    <div class="temp-zone">
+      <div class="temp-val fridge-status" style="color: #00e5ff;">COOL</div>
+      <div class="temp-lbl">Status</div>
+    </div>
+</div>
+
+  <div class="input-screen">
+    <h2 class="input-title">FRIDGE INVENTORY</h2>
+
+    <input type="text" id="inp-name" placeholder="Food item (e.g., Apple, Milk)">
+    <input type="date" id="inp-date">
+    <input type="text" id="inp-qty" placeholder="Quantity (e.g., 2kg, 1 Liter)">
+
+    <select id="inp-cat">
+      <option value="" disabled selected>Select Category</option>
+      <option value="vegetable">🥦 Vegetable</option>
+      <option value="fruit">🍎 Fruit</option>
+      <option value="dairy">🥛 Dairy / Milk</option>
+      <option value="meat">🥩 Meat / Poultry</option>
+      <option value="leftover">🍱 Leftovers</option>
+    </select>
+
+    <button onclick="addItem()" style="margin-bottom: 10px;">ADD TO INVENTORY</button>
+    
+    <button onclick="analyzeItems()" class="btn-analyze">
+      ⚡ ANALYSE FRIDGE CONTENTS
+    </button>
+
+    <div id="items-loaded"></div>
+
+    <div id="recipe-section" style="margin-top: 25px; display: none; border-top: 1px solid #1a2a3a; padding-top: 15px;">
+        <h4 style="color: #00e5ff; font-size: 14px; margin-bottom: 10px; letter-spacing: 1px;">AI RECIPE SUGGESTIONS</h4>
+        <div id="recipe-list"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

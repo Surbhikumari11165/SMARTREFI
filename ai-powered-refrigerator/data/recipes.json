@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Omelette",
+    "ingredients": ["eggs", "milk"]
+  },
+  {
+    "name": "Sandwich",
+    "ingredients": ["bread", "butter"]
+  },
+  {
+    "name": "Milkshake",
+    "ingredients": ["milk", "banana"]
+  }
+]

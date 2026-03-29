@@ -1,0 +1,243 @@
+/* --- GLOBAL STYLES --- */
+body {
+  background: #030810;
+  color: #e0f7fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  margin: 0;
+}
+
+/* --- THE FRIDGE OUTER FRAME --- */
+.fridge-frame {
+  width: 420px;
+  border: 2px solid #00e5ff;
+  border-radius: 20px;
+  padding: 25px;
+  background: #0a1628;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+}
+
+/* --- HEADER & TOP BAR --- */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #1a2a3a;
+  padding-bottom: 15px;
+}
+
+.logo-name {
+  color: #00e5ff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo-sub {
+  font-size: 10px;
+  color: #4fc3f7;
+  opacity: 0.8;
+}
+
+/* --- SENSORS / TEMP STRIP --- */
+.temp-strip {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.temp-zone {
+  text-align: center;
+}
+
+.temp-val {
+  font-weight: bold;
+  color: #00e5ff;
+}
+
+.temp-lbl {
+  font-size: 10px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+/* --- INPUTS & BUTTONS --- */
+.input-screen input, .input-screen select {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px;
+  background: #102030;
+  border: 1px solid #1a3a5a;
+  border-radius: 8px;
+  color: white;
+  box-sizing: border-box; /* Prevents overflow */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #00e5ff;
+  color: #030810;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: transform 0.1s, background 0.3s;
+}
+
+button:hover {
+  background: #00b8d4;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* --- AI ANALYSIS CARDS (The Final Visual) --- */
+#items-loaded {
+  margin-top: 20px;
+}
+
+.analysis-card {
+  background: #ffffff; /* Contrast against dark fridge */
+  color: #333;
+  margin-bottom: 15px;
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item-main-info strong {
+  font-size: 16px;
+  display: block;
+}
+
+.item-main-info small {
+  color: #777;
+}
+
+.ml-score-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+.analysis-card {
+    position: relative; /* This tells the ✕ button to stay inside the card */
+    overflow: visible;  /* This ensures the button isn't cut off */
+}
+
+/* Progress Bar Logic */
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 8px;
+  background: #eef2f3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Dynamic Colors */
+.status-expired { background: #ffebee; color: #c62828; }
+.bg-expired { background: #e74c3c; }
+
+.status-expiring { background: #fff3e0; color: #ef6c00; }
+.bg-expiring { background: #f39c12; }
+
+.status-fresh { background: #e8f5e9; color: #2e7d32; }
+.bg-fresh { background: #2ecc71; }
+
+.recipe-card {
+    background: rgba(0, 229, 255, 0.1);
+    border: 1px border #00e5ff;
+    color: #e0f7fa;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #00e5ff;
+}
+
+/* Styling for the delete button in the simple list */
+.pending-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 6px;
+    padding: 4px 0;
+    border-bottom: 1px solid #1a2a3a;
+}
+
+.btn-delete {
+    background: transparent;
+    color: #ff5252;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    width: auto; /* Overrides your global button width */
+    padding: 0 5px;
+}
+
+/* Styling for the delete button inside the AI cards */
+.btn-delete-card {
+    background: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 10px;
+    transition: 0.2s;
+}
+
+.btn-delete-card:hover {
+    background: #e74c3c;
+    color: white;
+}
