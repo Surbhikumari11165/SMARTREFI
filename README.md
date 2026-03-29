@@ -3,8 +3,10 @@
 
 An AI-powered smart refrigerator system that integrates food detection, expiry prediction, and recipe recommendation using machine learning and data-driven techniques.
 
-SmartRefi: AI-Powered Freshness Control System
+SmartRefi: AI-Powered Freshness Control System   
+
 SmartRefi is a high-tech, full-stack dashboard designed to modernize kitchen management and reduce food waste. By bridging a "Neon-Dark" futuristic interface with the Google Gemini AI, the system provides real-time inventory tracking, expiry analysis, and intelligent recipe generation.
+
 
 
 🚀Key Features
@@ -19,6 +21,7 @@ Local Persistence: Implemented browser localStorage to ensure fridge inventory r
 Secure Architecture: Utilizes .env configuration to protect sensitive API credentials, ensuring cybersecurity best practices.
 
 
+
 🛠️ Technical Tech Stack
 
 Layer,Technology
@@ -27,6 +30,7 @@ Backend,"Python 3.x, Flask"
 AI Engine,Google Generative AI (Gemini API)
 Communication,RESTful API / JSON
 Environment,Python-Dotenv
+
 
 📂 Project Structure
 ai-powered-refrigerator/
@@ -47,7 +51,8 @@ ai-powered-refrigerator/
 ├── utils/                  # Helper Functions
 ├── requirements.txt        # List of Python Dependencies
 ├── test_db.py              # Database Connectivity Test
-└── README.md               # Project Documentation     
+└── README.md               # Project Documentation 
+
 
 ⚙️ Quick Start
 Clone the Repository:
@@ -75,12 +80,14 @@ Open frontend/index.html in your browser.
 
 
 
+
 🔮 Roadmap & Future Enhancements
 Computer Vision: Camera integration to automatically scan and log items as they enter the fridge.
 
 Mobile Push Notifications: Alerts sent to the user's phone when high-value items (meat/dairy) are 24 hours from expiring.
 
 Voice Control: "Hey SmartRefi, what should I cook tonight?" via Web Speech API.
+
 
 
 👤 Developer
