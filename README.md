@@ -12,15 +12,15 @@ SmartRefi is a high-tech, full-stack dashboard designed to modernize kitchen man
 ---
 
 ## Key Features   
-### AI Culinary Intelligence: Integrated with Gemini 1.5 Flash to analyze safe-to-eat ingredients and generate creative recipe suggestions instantly.
+AI Culinary Intelligence: Integrated with Gemini 1.5 Flash to analyze safe-to-eat ingredients and generate creative recipe suggestions instantly.
 
-### Live Sensor Simulation: A dynamic "Heartbeat" system using JavaScript to simulate real-time Fridge, Freezer, and Humidity sensor fluctuations (±0.2°C jitter) for a realistic hardware feel.
+Live Sensor Simulation: A dynamic "Heartbeat" system using JavaScript to simulate real-time Fridge, Freezer, and Humidity sensor fluctuations (±0.2°C jitter) for a realistic hardware feel.
 
-### Smart Expiry Logic: A custom backend algorithm that calculates shelf-life based on food categories and provides visual "Traffic Light" alerts (Fresh, Expiring, or Expired).
+Smart Expiry Logic: A custom backend algorithm that calculates shelf-life based on food categories and provides visual "Traffic Light" alerts (Fresh, Expiring, or Expired).
 
-### Local Persistence: Implemented browser localStorage to ensure fridge inventory remains intact even after a page refresh or session close.
+Local Persistence: Implemented browser localStorage to ensure fridge inventory remains intact even after a page refresh or session close.
 
-### Secure Architecture: Utilizes .env configuration to protect sensitive API credentials, ensuring cybersecurity best practices.
+Secure Architecture: Utilizes .env configuration to protect sensitive API credentials, ensuring cybersecurity best practices.
 
 ---
 
