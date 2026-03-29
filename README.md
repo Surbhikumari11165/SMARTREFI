@@ -62,7 +62,7 @@ ai-powered-refrigerator/
 ### Clone the Repository:
 
 Bash
-git clone https://github.com/your-username/smartrefi.git
+git clone https://github.com/Surbhikumari11165/smartrefi.git
 cd smartrefi
 
 ### Install Dependencies:
