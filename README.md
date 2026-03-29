@@ -8,8 +8,7 @@ SmartRefi: AI-Powered Freshness Control System
 SmartRefi is a high-tech, full-stack dashboard designed to modernize kitchen management and reduce food waste. By bridging a "Neon-Dark" futuristic interface with the Google Gemini AI, the system provides real-time inventory tracking, expiry analysis, and intelligent recipe generation.
 
 
-
-🚀Key Features
+🚀Key Features   
 AI Culinary Intelligence: Integrated with Gemini 1.5 Flash to analyze safe-to-eat ingredients and generate creative recipe suggestions instantly.
 
 Live Sensor Simulation: A dynamic "Heartbeat" system using JavaScript to simulate real-time Fridge, Freezer, and Humidity sensor fluctuations (±0.2°C jitter) for a realistic hardware feel.
